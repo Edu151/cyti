@@ -1,8 +1,8 @@
 {
   "name": "sites",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "description": "Gravidez Indesejada",
+  "productName": "Gravidez Indesejada",
   "author": "Edu Alves <edualvesdemorais171@gmail.com>",
   "private": true,
   "scripts": {

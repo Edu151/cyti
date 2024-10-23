@@ -127,8 +127,8 @@ export default {
       alert('Mensagem enviada com sucesso!');
     },
     openWhatsApp() {
-      const phoneNumber = '5551998765432'; // Substitua pelo número da clínica
-      const message = encodeURIComponent('Olá, gostaria de mais informações sobre os serviços.');
+      const phoneNumber = '5562996109765'; // Substitua pelo número da clínica
+      const message = encodeURIComponent('Olá, gostaria de mais informações sobre os serviços (cytotec).');
       const url = `https://wa.me/${phoneNumber}?text=${message}`;
       window.open(url, '_blank');
     }
