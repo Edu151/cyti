@@ -13,7 +13,7 @@
     </q-header>
 
     <!-- Carrossel de Imagens -->
-    <q-img src="src/assets/Image.jpeg"/>
+    <q-img src="public/icons/Image.jpeg"/>
     <q-card class="q-my-md" >
       <q-card-section>
         <h4>Clique aqui e fale Conosco! atendimento imediato</h4>
@@ -55,7 +55,7 @@
     <!-- Sobre a Clínica -->
     <div id="about" class="q-pa-md bg-grey-3">
       <h3>Sobre a Clínica</h3>
-      <p>A Clínica <STRONG> CYTO BRASIL </STRONG> oferece diversos procedimentos de  gravidez de alta qualidade podendo realizar online e físico</p>
+      <p>A Clínica <STRONG> CYTO BRASIL </STRONG> oferece diversos procedimentos de  gravidez de alta qualidade podendo realizar online e física</p>
     </div>
 
     <!-- Seção de Contato -->
