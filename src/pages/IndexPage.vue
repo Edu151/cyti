@@ -4,7 +4,7 @@
     <q-header class="text-white bg-primary">
       <q-toolbar>
         <q-toolbar-title>
-          Clínica Dra. Janaína
+          CYTO BRASIL
         </q-toolbar-title>
         <q-btn flat label="Home" @click="scrollToSection('home')" />
         <q-btn flat label="Serviços" @click="scrollToSection('services')" />
@@ -13,7 +13,7 @@
     </q-header>
 
     <!-- Carrossel de Imagens -->
-    <q-img src="src/assets/111.jpg"/>
+    <q-img src="src/assets/Image.jpeg"/>
     <q-card class="q-my-md" >
       <q-card-section>
         <h4>Clique aqui e fale Conosco! atendimento imediato</h4>
@@ -33,7 +33,7 @@
       <q-banner class="q-mb-md">
         <h2>Nossos Serviços</h2>
         <h5>
-          Oferecemos uma ampla gama de serviços médicos personalizados para você.
+          Oferecemos serviços médicos personalizados, focados em atender suas necessidades com qualidade e cuidado especial.
         </h5>
       </q-banner>
       <q-card class="q-my-md" v-for="(service, index) in services" :key="index">
@@ -55,34 +55,29 @@
     <!-- Sobre a Clínica -->
     <div id="about" class="q-pa-md bg-grey-3">
       <h3>Sobre a Clínica</h3>
-      <p>A Clínica Dra. Janaína oferece serviços de alta qualidade...</p>
+      <p>A Clínica <STRONG> CYTO BRASIL </STRONG> oferece diversos procedimentos de  gravidez de alta qualidade podendo realizar online e físico</p>
     </div>
 
     <!-- Seção de Contato -->
     <div id="contact" class="q-pa-md">
       <h2>Contato</h2>
       <q-btn
-        flat
+        fabule
         color="green"
         icon="fab fa-whatsapp"
         label="WhatsApp"
         @click="openWhatsApp"
       />
-      <q-form @submit="submitContact">
-        <q-input v-model="form.name" label="Nome" filled /><br>
-        <q-input v-model="form.email" label="Email" filled type="email" /><br>
-        <q-input v-model="form.message" label="Mensagem" filled type="textarea" /><br>
-        <q-btn label="Enviar" type="submit" color="green" />
-      </q-form>
+
 
       <!-- Botão de WhatsApp -->
 
     </div>
 
     <!-- Rodapé -->
-    <q-footer class="text-center bg-dark text-white q-pa-md">
+    <q-footer class="text-center bg-primary text-white q-pa-md">
       <div>
-        <span>&copy; 2023 Clínica Dra. Janaína - Todos os direitos reservados</span>
+        <span>&copy; 2023 Clínica CYTO BRASIL - Todos os direitos reservados</span>
       </div>
       <q-btn
         flat
@@ -108,7 +103,7 @@ export default {
       services: [
         { name: 'Gravidez indesejada', description: 'Pare agora sua Gravidez.' },
         { name: 'Exames Clínicos', description: 'Exames clínicos de última geração.' },
-        { name: 'Cirurgias Ambulatoriais', description: 'Procedimentos cirúrgicos com segurança.' },
+        {name: 'Curetagem', description :'procedimento cirurgico com segurança'},
       ],
       form: {
         name: '',
@@ -127,7 +122,7 @@ export default {
       alert('Mensagem enviada com sucesso!');
     },
     openWhatsApp() {
-      const phoneNumber = '5562996109765'; // Substitua pelo número da clínica
+      const phoneNumber = '556299810718'; // Substitua pelo número da clínica
       const message = encodeURIComponent('Olá, gostaria de mais informações sobre os serviços (cytotec).');
       const url = `https://wa.me/${phoneNumber}?text=${message}`;
       window.open(url, '_blank');
