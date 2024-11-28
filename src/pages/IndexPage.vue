@@ -11,7 +11,6 @@
         <q-btn flat label="Contato" @click="scrollToSection('contact')" />
       </q-toolbar>
     </q-header>
-
     <!-- Carrossel de Imagens -->
     <q-img src="/icons/Image.jpeg" />
 
@@ -31,12 +30,21 @@
 
     <!-- Seção de Serviços -->
     <div id="services" class="q-pa-md">
-      <q-banner class="q-mb-md">
+      <q-card class="q-my-md">
         <h2>Nossos Serviços</h2>
         <h5>
           Oferecemos serviços médicos personalizados, focados em atender suas necessidades com qualidade e cuidado especial.
         </h5>
-      </q-banner>
+        <div class="q-mt-md text-center">
+          <q-btn
+            color="green"
+            icon="fab fa-whatsapp"
+            label="Entre em contato via WhatsApp"
+            @click="openWhatsApp"
+          />
+        </div>
+
+      </q-card>
       <q-card class="q-my-md" v-for="(service, index) in services" :key="index">
         <q-card-section>
           <h3>{{ service.name }}</h3>
