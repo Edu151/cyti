@@ -13,7 +13,8 @@
     </q-header>
 
     <!-- Carrossel de Imagens -->
-    <q-img src="public/icons/Image.jpeg"/>
+    <q-img src="/icons/Image.jpeg" />
+
     <q-card class="q-my-md" >
       <q-card-section>
         <h4>Clique aqui e fale Conosco! atendimento imediato</h4>
